@@ -1,0 +1,42 @@
+.Tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.Tab__contents > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Tab__contents__items {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-bottom: 2px solid var(--medium-grey);
+  background-color: var(--light-grey);
+  color: var(--medium-grey);
+  font-weight: 700;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.clicked {
+  color: var(--black-color);
+  transition: 0.2s linear;
+}
+
+.Tab__contents__underbar {
+  display: block;
+  position: relative;
+  bottom: 2px;
+  width: 180px;
+  height: 2px;
+  background-color: var(--point-color);
+  transition: 0.2s linear;
+  content: "";
+}

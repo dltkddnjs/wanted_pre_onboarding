@@ -1,0 +1,69 @@
+.Toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.Toggle__contents > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Toggle__contents__switch {
+  display: flex;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--light-grey);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.Toggle__contents__switch > input {
+  display: none;
+}
+
+.Toggle__contents__switch__slider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: var(--white-color);
+  transition: 0.2s linear;
+  content: "";
+}
+
+.Toggle__contents__switch__texts::after {
+  position: absolute;
+  top: 15px;
+  left: 20%;
+  color: var(--black-color);
+  content: attr(data-default);
+}
+
+.Toggle__contents__switch__texts::before {
+  position: absolute;
+  top: 15px;
+  right: 20%;
+  color: var(--medium-grey);
+  content: attr(data-det);
+}
+
+input:checked + .Toggle__contents__switch__slider {
+  transform: translateX(200px);
+  transition: 0.2s linear;
+}
+
+input:checked ~ .Toggle__contents__switch__texts::before {
+  color: var(--black-color);
+  transition: 0.2s linear;
+}
+
+input:checked ~ .Toggle__contents__switch__texts::after {
+  color: var(--medium-grey);
+  transition: 0.2s linear;
+}
