@@ -1,24 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { BiSearch } from "react-icons/bi";
 import "./styles/Dropdown.css";
 
 function Dropdown() {
   const defaultOption = "All Languages";
-  const languages = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Vue",
-    "Angular",
-    "C",
-    "C++",
-    "C#",
-    "Java",
-    "SQL",
-  ];
+  const languages = useMemo(() => {
+    return [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Vue",
+      "Angular",
+      "C",
+      "C++",
+      "C#",
+      "Java",
+      "SQL",
+    ];
+  }, []);
   const [isActive, setIsActive] = useState(false);
   const [selected, setSelected] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
