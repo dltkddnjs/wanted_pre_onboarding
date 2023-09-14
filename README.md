@@ -5,7 +5,12 @@
 :computer: 원티드 프리온보딩 프론트엔드 코스 사전 과제입니다.<br>
 가독성과 구조화를 위해 CSS의 BEM방법론과 코딩컨벤션을 이용하였습니다.<br>
 각 기능들을 구현하면서 코드설명과 구현하는 과정에서 어려웠던 점, 해결방법, 아쉬운 점 등을 기록하였습니다.
-<br><br>
+
+<br>
+
+[데모사이트](https://dltkddnjs.github.io/wanted_pre_onboarding)
+
+<br>
 
 ## :bookmark: Toggle
 
